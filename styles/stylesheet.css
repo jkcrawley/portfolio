@@ -102,4 +102,88 @@ Header and Navigation
     height: 3rem;
 }
 
+.mobnavbtn{
+        text-align: center;
+        background-color: #bb0000;
+        width: 10%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-top: 147px;
+        position: fixed;
+        display: none;
+        cursor: pointer;
+        z-index: 2;
+}
+
+.rArrow{
+    width: 5px; 
+    height:5px;
+    border-top: 10px solid transparent;
+    border-left: 20px solid white;
+    border-bottom: 10px solid transparent;
+    transition: all .5s;
+    display: block;
+}
+
+.lArrow{
+    width: 5px; 
+    height:5px;
+    border-top: 10px solid transparent;
+    border-right: 20px solid white;
+    border-bottom: 10px solid transparent;
+    display: none;
+    transition: all .5s;
+    position: absolute;
+    margin-right: 0%;
+}
+
+@media only screen and (max-width: 480px){
+
+    .header{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo{
+        margin: 0 auto;
+    }
+
+    .mobnavbtn{
+        display: flex;
+    }
+    
+    .nav{
+        background-color: #bb0000;
+        text-align: left;
+        margin-top: 147px;
+        display: block;
+        transition: all .5s;
+        margin-left: -200%;
+    }
+
+
+    .nav ul li{
+        display: block;
+        padding: 20px;
+    }
+
+
+    
+
+    .nav ul li a.hover{
+        background-color: #660000;
+    }
+
+    .nav ul li a::after{
+        display: none;
+    }
+
+    .header{
+        background-image: none;
+    }
+}
 
