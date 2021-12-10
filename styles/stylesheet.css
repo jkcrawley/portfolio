@@ -32,7 +32,6 @@ font-family: 'PT Sans', sans-serif;
 
 
 */
-
 p{
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -64,7 +63,13 @@ svg{
     margin: 1rem;
 }
 
+.p{
+    color: white;
+}
 
+h1, h2, h3, h4, h5, h6{
+    color: white;
+}
 
 svg:hover{
     fill: #00d4ff;
@@ -100,6 +105,7 @@ Header and Navigation
     height: auto;
     margin-left: 2%;
     opacity: 60%;
+    margin-left: 10%;
 }
 
 .headquotes h1{
