@@ -22,11 +22,46 @@ body{
 /*
 FONTS AND COLORS
 
+font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
+font-family: 'PT Sans', sans-serif;
+
 
 #4682B4
 
+
+
 */
+p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    size: 1rem;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: none;
+}
+
+.smicons a{
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.smicons{
+    width: 100%;
+}
+
+svg{
+    fill: #4267B2;
+    transition: all .2s;
+    width: 2rem;
+    height: auto;
+    margin: 1rem;
+}
 
 .p{
     color: white;
@@ -34,6 +69,10 @@ font-family: 'Oswald', sans-serif;
 
 h1, h2, h3, h4, h5, h6{
     color: white;
+}
+
+svg:hover{
+    fill: #00d4ff;
 }
 
 /*
@@ -64,12 +103,17 @@ Header and Navigation
     margin-top: 125px;
     width: 20%;
     height: auto;
+    margin-left: 2%;
+    opacity: 60%;
     margin-left: 10%;
 }
 
 .headquotes h1{
     margin: 0px;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-style: none;
 }
 
 .headquotes h1:nth-child(1){
@@ -155,6 +199,28 @@ Header and Navigation
         display: none;
         cursor: pointer;
         z-index: 2;
+}
+
+/*
+Content
+*/
+
+.content{
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -2rem;
+}
+
+section{
+    border: 1px solid #aa0000;
+    border-width: 10px 3px 10px 3px;
+    border-radius: 15px;
+}
+
+
+section p{
+    margin: 2rem;
 }
 
 .rArrow{
@@ -246,6 +312,12 @@ Header and Navigation
 
     .header{
         background-image: none;
+    }
+
+    .smicons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 }
 
