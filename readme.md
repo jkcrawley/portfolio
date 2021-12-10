@@ -29,3 +29,7 @@ Fixed broken styles indluding:
 **Version 1.1**
 
 Added custom Facebook preview content
+
+**Version 1.0**
+
+Updated social media bar to include Stack Overflow

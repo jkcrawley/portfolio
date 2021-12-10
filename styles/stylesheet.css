@@ -64,8 +64,8 @@ h1, h2, h3, h4, h5, h6{
   }
 
 .smicons{
-    width: 250px;
     height: 3rem;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
