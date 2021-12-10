@@ -30,6 +30,6 @@ Fixed broken styles indluding:
 
 Added custom Facebook preview content
 
-**Version 1.0**
+**Version 1.2**
 
 Updated social media bar to include Stack Overflow
