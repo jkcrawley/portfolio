@@ -1,4 +1,6 @@
 * {box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 html{
@@ -42,7 +44,7 @@ p{
 
 h1, h2, h3, h4, h5, h6{
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: none;
 }
 
@@ -62,7 +64,15 @@ h1, h2, h3, h4, h5, h6{
   }
 
 .smicons{
-    width: 100%;
+    width: 250px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(102,0,0);
+    background: linear-gradient(180deg, rgba(102,0,0,1) 0%, rgba(153,0,0,1) 35%, rgba(102,0,0,1) 100%);
+    margin: 5px;
+    border-radius: 30px;
 }
 
 svg{
@@ -95,6 +105,8 @@ Header and Navigation
     max-width: 1200px;
     border: none;
     display: flex;
+    border-style: solid;border-color: #aa0000;
+    border-width: 0px 3px 3px 3px
 }
 
 .logo{
@@ -109,12 +121,12 @@ Header and Navigation
     margin: 0 auto;
     display: flex;
     flex-flow: column;
-    margin-top: 125px;
+    justify-content: center;
+    margin-top: 20px;
     width: 20%;
-    height: auto;
-    margin-left: 2%;
+    height: 147px;
+    margin-left: 0;
     opacity: 60%;
-    margin-left: 10%;
 }
 
 .headquotes h1{
@@ -216,22 +228,63 @@ Content
 
 .content{
     text-align: left;
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
     margin-top: -140px;
 }
 
 section{
     border: 1px solid #aa0000;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-width: 10px 3px 10px 3px;
+    background-color: rgba(0, 0, 0);
+    border-width: 3px 3px 10px 3px;
     border-radius: 15px;
+    margin-bottom: 40px;
 }
 
 
 section p{
     margin: 2rem;
 }
+
+.content section:nth-of-type(odd) img{
+    float: right;
+    margin:20px;
+    margin-top: 0px;
+    max-width: 300px;
+    height: auto;
+}
+
+.content section:nth-of-type(even) img{
+    float: left;
+    max-width: 300px;
+    margin: 20px; 
+    margin-left: 0px; 
+    margin-top: 0px;
+}
+
+
+.sectionheader h1{
+    padding-left: 3rem;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    border-bottom: 2px solid #aa0000;
+}
+
+.sectionheader h1::after{
+    content:'';
+    width:200px;
+    display: block;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -50px;
+    border-top: 0px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 200px solid #aa0000;
+    z-index: 0;
+}
+
+/*mobile arrows*/
 
 .rArrow{
     width: 5px; 
@@ -259,18 +312,28 @@ section p{
 
 @media only screen and (max-width: 480px){
 
+    .wrapper{
+        max-width: 100%;
+        overflow-x: hidden;
+        position: relative;
+    }
+
     .mobnavcon{
         margin-top: 147px;
-        width: auto;
         height: auto;
-        margin-left: -100%;
         position: fixed;
+        left: 0;
+        float: left;
+        z-index: 2;
     }
 
     .header{
         text-align: center;
         display: flex;
         justify-content: center;
+        margin: 0px;
+        border-width: 0px 0px 3px 0px;
+        max-width: 100%;
     }
 
     .logo{
@@ -327,13 +390,27 @@ section p{
     }
 
     .smicons {
-        display: flex;
-        width: 100%;
-        justify-content: center;
+        display: none;
     }
 
     .content{
-        margin-top: -100px;
+        margin-top: -80px;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
     }
+
+    
+
+    section img{
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    section img:nth-child(odd{
+        float: none;
+    })
+
 }
 
