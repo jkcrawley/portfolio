@@ -14,5 +14,4 @@ Updated Header to include quotes. Modified Navigation and overall responsiveness
 Added content section
 Added social media SVG links.
 Refined basic font styles (color, size, spacing, line height, and font family)
-=======
 Updated Header to include quotes. Modified Navigation and overall responsiveness accordingly.
