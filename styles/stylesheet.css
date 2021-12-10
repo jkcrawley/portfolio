@@ -22,13 +22,53 @@ body{
 /*
 FONTS AND COLORS
 
+font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
+font-family: 'PT Sans', sans-serif;
+
 
 #4682B4
 
+
+
 */
 
+p{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    size: 1rem;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
 
+h1, h2, h3, h4, h5, h6{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: none;
+}
+
+.smicons a{
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.smicons{
+    width: 100%;
+}
+
+svg{
+    fill: #4267B2;
+    transition: all .2s;
+    width: 2rem;
+    height: auto;
+    margin: 1rem;
+}
+
+
+
+svg:hover{
+    fill: #00d4ff;
+}
 
 /*
 Header and Navigation
@@ -40,6 +80,7 @@ Header and Navigation
     height: 375px;
     max-width: 1200px;
     border: none;
+    display: flex;
 }
 
 .logo{
@@ -50,6 +91,42 @@ Header and Navigation
     margin: 20px;
 }
 
+.headquotes{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    margin-top: 125px;
+    width: 20%;
+    height: auto;
+    margin-left: 2%;
+    opacity: 60%;
+}
+
+.headquotes h1{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-style: none;
+}
+
+.headquotes h1:nth-child(1){
+    text-align: left;
+}
+
+.headquotes h1:nth-child(3){
+    text-align: right;
+}
+
+.mobnavcon{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    text-align: right;
+    position: fixed;
+    
+}
 
 .nav{
     margin: 0 auto;
@@ -118,6 +195,28 @@ Header and Navigation
         z-index: 2;
 }
 
+/*
+Content
+*/
+
+.content{
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -2rem;
+}
+
+section{
+    border: 1px solid #aa0000;
+    border-width: 10px 3px 10px 3px;
+    border-radius: 15px;
+}
+
+
+section p{
+    margin: 2rem;
+}
+
 .rArrow{
     width: 5px; 
     height:5px;
@@ -140,7 +239,17 @@ Header and Navigation
     margin-right: 0%;
 }
 
+
+
 @media only screen and (max-width: 480px){
+
+    .mobnavcon{
+        margin-top: 147px;
+        width: auto;
+        height: auto;
+        margin-left: -100%;
+        position: fixed;
+    }
 
     .header{
         text-align: center;
@@ -152,14 +261,27 @@ Header and Navigation
         margin: 0 auto;
     }
 
+    .headquotes{
+        position: absolute;
+        margin-top: 147px;
+        display: block;
+        width: 60%;
+        border: 1px solid red;
+    }
+
+    .headerquotes h1{
+        display: block;
+        text-align: center;
+    }
+
     .mobnavbtn{
         display: flex;
+        margin: 0px;
     }
     
     .nav{
         background-color: #bb0000;
         text-align: left;
-        margin-top: 147px;
         display: block;
         transition: all .5s;
         margin-left: -200%;
@@ -184,6 +306,12 @@ Header and Navigation
 
     .header{
         background-image: none;
+    }
+
+    .smicons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 }
 
