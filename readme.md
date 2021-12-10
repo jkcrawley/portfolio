@@ -25,3 +25,7 @@ Adjusted stylesheet.css for new Content
 Fixed broken styles indluding:
     - broken wrapper margins
     - mobile navigation floating behind certain css shapes
+
+**Version 1.1**
+
+Added custom Facebook preview content
