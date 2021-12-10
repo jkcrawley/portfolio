@@ -28,7 +28,13 @@ font-family: 'Oswald', sans-serif;
 
 */
 
+.p{
+    color: white;
+}
 
+h1, h2, h3, h4, h5, h6{
+    color: white;
+}
 
 /*
 Header and Navigation
@@ -40,6 +46,7 @@ Header and Navigation
     height: 375px;
     max-width: 1200px;
     border: none;
+    display: flex;
 }
 
 .logo{
@@ -50,6 +57,38 @@ Header and Navigation
     margin: 20px;
 }
 
+.headquotes{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    margin-top: 125px;
+    width: 20%;
+    height: auto;
+    margin-left: 10%;
+}
+
+.headquotes h1{
+    margin: 0px;
+    padding: 0;
+}
+
+.headquotes h1:nth-child(1){
+    text-align: left;
+}
+
+.headquotes h1:nth-child(3){
+    text-align: right;
+}
+
+.mobnavcon{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    text-align: right;
+    position: fixed;
+    
+}
 
 .nav{
     margin: 0 auto;
@@ -140,7 +179,17 @@ Header and Navigation
     margin-right: 0%;
 }
 
+
+
 @media only screen and (max-width: 480px){
+
+    .mobnavcon{
+        margin-top: 147px;
+        width: auto;
+        height: auto;
+        margin-left: -100%;
+        position: fixed;
+    }
 
     .header{
         text-align: center;
@@ -152,14 +201,27 @@ Header and Navigation
         margin: 0 auto;
     }
 
+    .headquotes{
+        position: absolute;
+        margin-top: 147px;
+        display: block;
+        width: 60%;
+        border: 1px solid red;
+    }
+
+    .headerquotes h1{
+        display: block;
+        text-align: center;
+    }
+
     .mobnavbtn{
         display: flex;
+        margin: 0px;
     }
     
     .nav{
         background-color: #bb0000;
         text-align: left;
-        margin-top: 147px;
         display: block;
         transition: all .5s;
         margin-left: -200%;

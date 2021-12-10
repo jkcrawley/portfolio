@@ -4,3 +4,5 @@ created stylesheet.css in styles folder.
 Created header, including logo and animated navigation.
 
 Updated responsive navigation with slide effect.
+
+Updated Header to include quotes. Modified Navigation and overall responsiveness accordingly.
