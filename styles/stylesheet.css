@@ -300,20 +300,18 @@ section p{
     margin: 2rem;
 }
 
+section img{
+    max-width: 300px;
+    margin: 20px; 
+    margin-top: 0px;
+}
+
 .content section:nth-of-type(odd) img{
     float: right;
-    margin:20px;
-    margin-top: 0px;
-    max-width: 300px;
-    height: auto;
 }
 
 .content section:nth-of-type(even) img{
     float: left;
-    max-width: 300px;
-    margin: 20px; 
-    margin-left: 0px; 
-    margin-top: 0px;
 }
 
 
@@ -454,17 +452,32 @@ section p{
         flex-flow: column;
     }
 
-    section{opacity: 1;};
+    section{opacity: 1;}
+    
 
-    section img{
+    section img{float: none;}
+
+    section:nth-of-type(even) img{
+        float:none !important;
+        margin: 0px auto;
         width: 100%;
-        margin: 0 auto;
-        float: none;
+        height: auto;
+        display: block;
+        clear: right;
     }
 
-    section img:nth-child(odd{
-        float: none;
-    })
+    section:nth-of-type(odd) img{
+        float:none !important;
+        margin: 0px auto;
+        width: 100%;
+        height: auto;
+        display: block;
+        clear: right;
+    }
+
+    .fade-in{
+        opacity: 1;
+    }
 
 }
 

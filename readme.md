@@ -43,3 +43,7 @@ Updated social media bar to include Stack Overflow
 **Version 1.3**
 Added fade effect on section and header text
 Added function to change navigation background color when leaving hero section
+
+
+**Version 1.4**
+Fixed mobile issues with javascript fading scroll effect
