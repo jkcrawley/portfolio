@@ -59,3 +59,14 @@ Fixed mobile issues with javascript fading scroll effect
 -Created new styles specifically for about pages
 
 -tweaked content css
+
+**Version 1.6**
+
+Updated content on About page.
+
+Added Resume section to About page.
+
+Created resume page with dedicated styles
+
+Configured responsiveness on About and created a dedicated stylesheet.
+

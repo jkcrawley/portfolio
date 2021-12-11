@@ -6,7 +6,7 @@
 html{
     margin: 0px;
     padding: 0px;
-    font-family: 'Oswald', sans-serif;
+    
 }
 
 body{
@@ -42,11 +42,40 @@ p{
     line-height: 1.5rem;
 }
 
+a{
+    font-family: 'Oswald', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6{
     color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: none;
 }
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.17rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+h5{
+    font-size: .83rem;
+}
+
+h6{
+    font-size: .67rem;
+}
+
 
 .smicons a{
     text-decoration: none;
@@ -75,22 +104,19 @@ h1, h2, h3, h4, h5, h6{
     border-radius: 30px;
 }
 
-svg{
+.smicons svg{
     fill: #4267B2;
     transition: all .2s;
     width: 2rem;
     height: auto;
 }
 
-.p{
-    color: white;
-}
 
 h1, h2, h3, h4, h5, h6{
     color: white;
 }
 
-svg:hover{
+.smicons svg:hover{
     fill: #00d4ff;
 }
 
@@ -102,7 +128,8 @@ header{
     max-width: 1200px;
     height: 375px;
     border-style: solid;border-color: #aa0000;
-    border-width: 0px 3px 3px 3px
+    border-width: 0px 3px 3px 3px;
+    display: flex;
 }
 
 .header{
@@ -111,7 +138,8 @@ header{
     max-width: 1200px;
     border: none;
     display: flex;
-    border-style: solid;border-color: #aa0000;
+    border-style: solid;
+    border-color: #aa0000;
     border-width: 0px 3px 3px 3px;
 }
 
@@ -121,6 +149,7 @@ header{
     background-image: url('../images/logo.jpg');
     float: left;
     margin: 20px;
+    z-index: 2;
 }
 
 .headquotes{
@@ -375,6 +404,8 @@ section img{
         max-width: 100%;
         overflow-x: hidden;
         position: relative;
+        display: flex;
+        flex-flow: column;
     }
 
     .mobnavcon{
