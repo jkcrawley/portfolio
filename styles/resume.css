@@ -26,7 +26,7 @@ a:hover{
 .wrapper{
     margin: 0 auto;
     background-color: white;
-    width: 1200px;
+    max-width: 1200px;
     text-align: left;
     position: relative;
 }
@@ -58,7 +58,7 @@ section{
 
 .panel{
     background: rgb(113,143,160);
-background: linear-gradient(360deg, rgba(113,143,160,1) 6%, rgba(154,185,203,1) 42%, rgba(92,119,134,1) 98%);
+    background: linear-gradient(360deg, rgba(113,143,160,1) 6%, rgba(154,185,203,1) 42%, rgba(92,119,134,1) 98%);
     color: white;
     width: 20%;
     position: relative;
@@ -70,4 +70,28 @@ background: linear-gradient(360deg, rgba(113,143,160,1) 6%, rgba(154,185,203,1) 
     font-weight: bold;
     color: white;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 480px){
+    .content{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .experience{
+        display: block;
+        width: 100%;
+        margin: 0px;
+        margin-top 20px;
+    }
+
+    .experience h2{
+        text-align: center;
+    }
+
+    .panel{
+        display: block;
+        width: 100%;
+        margin: 0px;
+    }
 }
