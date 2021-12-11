@@ -279,7 +279,7 @@ Content
     text-align: left;
     max-width: 80%;
     margin: 0 auto;
-    margin-top: -140px;
+    margin-top: -136px;
 }
 
 section{
@@ -323,9 +323,10 @@ section img{
 
 .sectionheader h1{
     padding-left: 3rem;
+    padding-bottom: 1rem;
     width: 100%;
     height: auto;
-    margin-top: 0px;
+    margin-top: 20px;
     border-bottom: 2px solid #aa0000;
 }
 
@@ -334,7 +335,7 @@ section img{
     width:200px;
     display: block;
     position: absolute;
-    margin-top: 0px;
+    margin-top: 1rem;
     margin-left: -50px;
     border-top: 0px solid transparent;
     border-bottom: 15px solid transparent;
