@@ -65,7 +65,7 @@ faders.forEach(fader =>{
 
 //scroll navbar effects
 const header = document.querySelector('.nav');
-const sectionOne = document.querySelector('.header');
+const sectionOne = document.querySelector('header');
 
 const sectionOneOptions = {};
 

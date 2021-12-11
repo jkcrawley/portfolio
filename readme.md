@@ -57,3 +57,5 @@ Fixed mobile issues with javascript fading scroll effect
 -Created Template page
 
 -Created new styles specifically for about pages
+
+-tweaked content css
