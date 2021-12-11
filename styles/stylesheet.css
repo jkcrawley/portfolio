@@ -137,13 +137,51 @@ Header and Navigation
     font-style: none;
 }
 
+
+/* Quotes Animation */
+
 .headquotes h1:nth-child(1){
     text-align: left;
+    animation: fadeFirst .5s ease-in forwards;
+}
+
+@keyframes fadeFirst{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.headquotes h1:nth-child(2){
+    animation: fadeSecond 1s ease-in forwards;
+}
+
+@keyframes fadeSecond{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .headquotes h1:nth-child(3){
     text-align: right;
+    animation: fadeThird 1.5s ease-in forwards;
 }
+
+@keyframes fadeThird{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navigation*/
 
 .mobnavcon{
     margin: 0 auto;
@@ -222,6 +260,11 @@ Header and Navigation
         z-index: 2;
 }
 
+/*Change navbar on scroll */
+.navscrolled{
+    background-color: rgba(0, 0, 0, .8);
+}
+
 /*
 Content
 */
@@ -239,6 +282,17 @@ section{
     border-width: 3px 3px 10px 3px;
     border-radius: 15px;
     margin-bottom: 40px;
+}
+
+/* Section fading effects */
+
+.fade-in{
+    opacity: 0;
+    transition: opacity .5s ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
 }
 
 
@@ -400,7 +454,7 @@ section p{
         flex-flow: column;
     }
 
-    
+    section{opacity: 1;};
 
     section img{
         width: 100%;
