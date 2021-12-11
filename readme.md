@@ -26,10 +26,20 @@ Fixed broken styles indluding:
     - broken wrapper margins
     - mobile navigation floating behind certain css shapes
 
+
+
 **Version 1.1**
 
 Added custom Facebook preview content
 
+
+
 **Version 1.2**
 
 Updated social media bar to include Stack Overflow
+
+
+
+**Version 1.3**
+Added fade effect on section and header text
+Added function to change navigation background color when leaving hero section
