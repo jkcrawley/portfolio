@@ -98,6 +98,12 @@ svg:hover{
 Header and Navigation
 */
 
+header{
+    max-width: 1200px;
+    height: 375px;
+    border-style: solid;border-color: #aa0000;
+    border-width: 0px 3px 3px 3px
+}
 
 .header{
     background-image: url('../images/herobg.jpg');
@@ -106,7 +112,7 @@ Header and Navigation
     border: none;
     display: flex;
     border-style: solid;border-color: #aa0000;
-    border-width: 0px 3px 3px 3px
+    border-width: 0px 3px 3px 3px;
 }
 
 .logo{
