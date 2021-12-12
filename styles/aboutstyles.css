@@ -74,13 +74,18 @@ header{
 Content for about page */
 
 @media only screen and (max-width:480px){
+    .wrapper{
+        text-align: center;
+    }
     .content.aboutsec{
         margin-top: -240px;
     }
-
-    .content.aboutsec img{
+    
+    content.aboutsec img{
         max-width: 300px;
         margin: 0 auto;
+        margin-left: 0px;
+        padding: 0px;
     }
 
     .resumesec{
