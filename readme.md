@@ -70,7 +70,7 @@ Created resume page with dedicated styles
 
 Configured responsiveness on About and created a dedicated stylesheet.
 
-**Version 1.6**
+**Version 1.7**
 
 Updated multiple pages including a contact page with functional form, about page with resume, and projects page.
 
