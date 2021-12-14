@@ -1,0 +1,96 @@
+header{
+    background-image: url('../images/projhero.jpg');
+    background-size: cover;
+}
+
+.projcontent{
+    margin-top: -77px;
+    
+}
+
+.previewbox{
+    width: 80%;
+    height: auto;
+    margin: 1rem auto;
+    padding: 0 3rem 0 3rem;
+    display: block;
+}
+
+.previewbox a{
+    text-decoration: none;
+}
+
+.previewbox h2{
+    text-align: center;
+}
+
+.projbox{
+    max-width: 400px;
+    height: 204px;
+    background-size: contain;
+    margin: 0 auto;
+    text-align: right;
+    transition: all 1s;
+    opacity: 60%;
+    z-index: -1;
+}
+
+.projbox:hover{
+    max-width: 470px;
+    height: 240px;
+    opacity: 1;
+    
+}
+
+.projbox::after{
+    content: '';
+    width: 100px;
+    height: 150px;
+    background-size: contain;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: -100px;
+    transition: all 1s;
+}
+
+.projbox:hover::after{
+    width:  120px;
+    height: 180px;
+}
+
+.projbox.brandy{
+    background-image: url('../images/bran-desktop.jpg');
+}
+
+.projbox.brandy::after{
+    background-image: url('../images/bran-mobile.png');
+}
+
+.projbox.cvr{
+    background-image: url('../images/cvr-desktop.jpg');
+}
+
+.projbox.cvr::after{
+    background-image: url('../images/cvr-mobile.png');
+}
+
+.smicons svg{
+    fill: white;
+    opacity: .5;
+}
+
+.smicons svg:hover{
+    fill: white;
+}
+
+@media only screen and (max-width:480px){
+    .previewbox{
+        width: 100%;
+        padding: 5px;
+    }
+
+    .projbox{
+        margin: 0px;
+        width: 100%;
+    }
+}

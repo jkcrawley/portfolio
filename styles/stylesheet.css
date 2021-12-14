@@ -11,6 +11,7 @@ html{
 
 body{
     background-color: black;
+    color: white;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -21,18 +22,14 @@ body{
     margin: 0 auto;
 }
 
+
+
 /*
 FONTS AND COLORS
-
 font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'PT Sans', sans-serif;
-
-
 #4682B4
-
-
-
 */
 p{
     color: white;
@@ -42,8 +39,17 @@ p{
     line-height: 1.5rem;
 }
 
+
 a{
+    color: #4682B4;
+    text-decoration: none;
+    font-size: 1rem;
     font-family: 'Oswald', sans-serif;
+}
+
+a:hover{
+    color: #91bcdf;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -235,6 +241,7 @@ header{
     max-width: 1200px;
     text-align: right;
     position: fixed;
+    z-index: 1000;
 }
 
 .nav ul{
@@ -306,7 +313,7 @@ Content
 
 .content{
     text-align: left;
-    max-width: 80%;
+    width: 80%;
     margin: 0 auto;
     margin-top: -136px;
 }
@@ -381,7 +388,9 @@ section img{
     border-left: 20px solid white;
     border-bottom: 10px solid transparent;
     transition: all .5s;
+    position: absolute;
     display: block;
+    
 }
 
 .lArrow{
@@ -406,6 +415,7 @@ section img{
         position: relative;
         display: flex;
         flex-flow: column;
+        padding: 0px;
     }
 
     .mobnavcon{
@@ -448,6 +458,7 @@ section img{
     .mobnavbtn{
         display: flex;
         margin: 0px;
+        z-index: 99;
     }
     
     .nav{
@@ -456,6 +467,7 @@ section img{
         display: block;
         transition: all .5s;
         margin-left: -200%;
+        z-index: 0;
     }
 
 
@@ -488,9 +500,12 @@ section img{
         width: 100%;
         display: flex;
         flex-flow: column;
+        padding: 0;
     }
 
-    section{opacity: 1;}
+    section{opacity: 1; width: 100%; padding: 0px;}
+
+
     
 
     section img{float: none;}
@@ -518,4 +533,3 @@ section img{
     }
 
 }
-

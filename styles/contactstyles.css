@@ -1,0 +1,53 @@
+header{
+    background-image: url('../images/contacthero.jpg');
+    background-size: cover;
+}
+
+
+
+.contact-form{
+    margin: 0px auto;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.inputfield{
+    background-color: #333;
+    color: #999999;
+    font-family: 'Montserrat', sans-serif;
+    height: 2rem;
+    background-color: black;
+}
+
+textarea{
+    background-color: #333;
+    color: #999999;
+    font-family: 'Montserrat', sans-serif;
+    height: 6rem;
+    background-color: black;
+    width: 200px;
+}
+
+.submit{
+    padding: .5rem;
+    cursor: pointer;
+    color: #999999;
+    background-color: #aa0000;
+    border-radius: 10px;
+    border-width: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.submit:hover{
+    background-color: #ff0000;
+    color: white;
+}
+
+@media only screen and (max-width: 480px){
+}
+
+.contactsection{
+    margin-top: -78px;
+}
