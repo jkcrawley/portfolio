@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+    <title>James Crawley: Portfolio</title>
+    <link href="./css/stylesheet.css" rel="stylesheet" />
+    <script src="./scripts/main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+    <main>
+        <div class="hamburger" id="hamburger" onclick="mobileNav();">
+            <div class="mobile-nav" id="navigation">
+                <ul>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class='burg-line line1'></div>
+            <div class='burg-line line2'></div>
+            <div class='burg-line line3'></div>
+            
+        
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <div class="logo-wrapper">
+                <div class="logo-txt">
+                    <h1>James Crawley</h1>
+                    <h2>Web Developer &amp; Programmer</h2>
+                </div>
+            </div>
+                <div class="skills">
+                    <div class="skill-box">HTML</div>
+                    <div class="skill-box">CSS</div>
+                    <div class="skill-box">Javascript</div>
+                    <div class="skill-box">PHP</div>
+                    <div class="skill-box">MySQL</div>
+                    <div class="skill-box">LAMP/WAMP</div>
+                    <div class="skill-box">Photoshop</div>
+                    <div class="skill-box">Git/Github</div>
+                </div>
+            
+        </section>
+
+        <section class="content">
+            
+            <article id="about">
+                <h2>Who I Am...</h2>
+                <div class="content-wrapper">
+                    <div class="content-center">
+                <img id='profile' src="./images/profile-cartoon.png" height="165px" width="150px" style="float: left; margin-right: 20px;"/>
+                <p>
+                    
+                    I started to get into web development in my teens, building websites on Geocities or Angelfire for my friends and I.  It was before divs, so I learned to layout websites with tables and would spiffy up the site with animated gifs I made in Photoshop.  I would also use photoshop to make graphics and avatars for friends on gaming forums. As I got older I started working in manufacturing, but I still pursued my passion in web development and eventually earned an AAS in Web Development and Programming. I continued to update my skills and develop several projects, whether it was for someone who needed a landing page or just for fun. </p>
+
+                    <p>I've always loved technology whether it was making websites for my friends or building computers with my kids, whom I would also teach HTML and CSS.  I have experience in working with different teams in many different environments, and my time working in collections helped me develop skills in problem solving and guiding consumers through issues and finding the best course of action.</p>
+
+                    <h4>Resume</h4>
+                    <p style="padding-top: 20px;">
+                    <a href="Resume.pdf" class="resume-btn" download><span style='font-weight: bold; text-decoration: underline'>&darr;</span> Download</a><a href="resume.html" class="resume-btn" target="_blank">View Page</a>
+                    </p>
+                    </div>
+                </div>
+            </article>
+            <article id="work">
+                <h2>My Work</h2>
+                <div class="content-wrapper">
+                    <div class="content-center">
+                    <div class="card">
+                        <div class="preview">
+                            <div class="proj-img pizza-maker"></div>
+                                <a href="http://www.jkcrawley.com/pizzamaker/" target="_blank" >View Live</a>
+                                <a href="https://github.com/jkcrawley/pizzamaker" target="_blank">View on Github</a>
+                        </div>
+                        <div class="proj-desc">
+                            <h3>Pizza Maker</h3>
+                            <p>This is a project I made out of fun to try and duplicate the pizza builder on Dominos Website.  It demonstrates my skills in building objects and performing calculations based on user input.</p>
+                        </div> 
+                    </div>
+
+                    <hr>
+
+                    <div class="card">
+                        <div class="preview">
+                            <div class="proj-img cvrecipe"></div>
+                                <a href="http://www.jkcrawley.com/cedarvalleyrecipes/" target="_blank" >View Live</a>
+                                <a href="https://github.com/jkcrawley/cedarvalleyrecipes" target="_blank">View on Github</a>
+                        </div>
+                        <div class="proj-desc">
+                            <h3>Cedar Valley Recipes</h3>
+                            <p>A PHP/MySQL project that allows users (depending on user level) to be able add, edit, and delete recipes. I am currently working on adding admin tools that allows members with higher user level to promote other users and delete/edit any entries that may be unwanted or inappropriate.</p>
+                        </div> 
+                    </div>
+
+                    <hr>
+
+                    <div class="card">
+                        <div class="preview">
+                            <div class="proj-img hyperion"></div>
+                                <a href="http://www.jkcrawley.com/hyperion/" target="_blank" >View Live</a>
+                                <a href="https://github.com/jkcrawley/hyperion" target="_blank">View on Github</a>
+                        </div>
+                        <div class="proj-desc">
+                            <h3>Hyperion Internet</h3>
+                            <p>I was out of practice for a while, so I made this as a mock up that was modeled after Mediacom's old website.</p>
+                        </div> 
+                    </div>
+
+                    <hr>
+
+                    <div class="card">
+                        <div class="preview">
+                            <div class="proj-img jimsbbq"></div>
+                                <a href="http://www.jkcrawley.com/jimsbbq/" target="_blank" >View Live</a>
+                                <a href="https://github.com/jkcrawley/jimsbbq" target="_blank">View on Github</a>
+                        </div>
+                        <div class="proj-desc">
+                            <h3>Jim's BBQ</h3>
+                            <p>After Web Design, my next love is good smokin' BBQ.  I made this with the similar intent as the Hyperion project, this was modeled after Famous Dave's old website.</p>
+                        </div> 
+                    </div>
+                </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>

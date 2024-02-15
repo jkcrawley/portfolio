@@ -1,0 +1,488 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* color scheme */
+
+:root {
+    --star-red: #df0000;
+    --star-gold: #f2c300;
+    --star-blue: #0099f6;
+    --star-green: #00b844;
+}
+
+
+/* fonts */
+
+@font-face{
+    font-family: stardate;
+    src: url('../fonts/Stardate81316-aolE.ttf');
+}
+
+
+@font-face{
+    font-family: captain;
+    src: url('../fonts/AmericanCaptainPatrius02Fre-PvPd.ttf');
+}
+
+@font-face{
+    font-family: montserrat;
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+/* Main styles */
+body{
+    background-color: var(--star-red);
+    text-align: center;
+    font-family: montserrat;
+}
+
+main{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    z-index: 20;
+}
+
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 20px;
+}
+
+article{
+    background: rgb(0,153,246);
+    background: linear-gradient(310deg, rgba(0,153,246,1) 23%, rgba(119,221,250,1) 47%, rgba(0,153,255,1) 62%, rgba(119,221,250,1) 89%);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 1rem;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: captain;
+    text-align: left;
+}
+
+h2{
+    padding: 10px;
+}
+
+p{
+    max-width: 70ch;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.content-wrapper{
+    background-color: white;
+    margin: 0px auto;
+    text-align: center;
+    padding: 80px;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.content-center{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Navigation */
+nav{
+    text-align: right;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li a{
+    font-family: captain;
+    text-decoration: none;
+    color: #ccc;
+    text-shadow: 2px 2px 5px black;
+    transition: all .2s ease-in-out;
+}
+
+ul li a:hover{
+    border-bottom: 1px dotted white;
+    color: white;
+}
+
+/* hero styles */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    background-image: url('../images/space-bg.jpg');
+    background-size: cover;
+    background-position-y: center;
+}
+
+.logo-wrapper{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+}
+
+.logo-txt h1, .logo-txt h2{
+    background-color: rgb(65,51,27);
+    background-image: linear-gradient(360deg, rgba(65,51,27,1) 2%, rgba(242,195,0,1) 47%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px black;
+    font-family: stardate;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo-txt h1{
+    font-size: 5rem;
+    font-style: italic;
+}
+
+.logo-txt h2{
+    font-size: 2.5rem;
+    -webkit-text-stroke: 0.8px black;
+    text-align: center;
+}
+
+
+.skills{
+    width: 700px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-box{
+    height: auto;
+    width: fit-content;
+    background-color: #0000ff;
+    color: #ccc;
+    padding: 5px 20px;
+    margin: 10px;
+    border-radius: 25px;
+    font-size: 1rem;
+    box-shadow: 0px 5px 5px #000;
+}
+
+/* Unique styles */
+
+.resume-btn{
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 18px;
+    background-color: var(--star-blue);
+    color: white;
+    margin-right: 20px;
+    transition: font-weight .2s ease-in-out;
+}
+
+.resume-btn:hover{
+    font-weight: bold;
+    
+}
+
+
+.content-center{
+    animation-name: contFade;
+    animation-duration: 1s;
+}
+
+@keyframes contFade{
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+/* Projects section */
+
+
+
+.card{
+    margin: 0px;
+    display: flex;
+}
+
+
+.preview.show-left{
+    transform: translateX(0);
+}
+
+.preview{
+    text-align: center;
+    width: 356px;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.preview.show-left{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.proj-desc.show-right{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.preview a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    color: white;
+    background-color: var(--star-blue);
+    margin-top: 20px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.preview a:hover{
+    background-color: var(--star-green);
+}
+
+.preview a:active{
+    background-color: var(--star-gold);
+}
+
+.preview a:visited{
+    background-color: var(--star-red);
+    color: #ccc;
+}
+
+.proj-img{
+    width: 356px;
+    height: 200px;
+    box-shadow: 2px 4px 5px #000;
+    display: block;
+    margin-bottom: 40px;
+}
+
+
+
+.pizza-maker{
+    background-image: url('../images/pizza-tmb.jpg');
+}
+
+.cvrecipe{
+    background-image: url('../images/cvr-tmb.jpg');
+}
+
+.hyperion{
+    background-image: url('../images/hyperion-tmb.jpg');
+}
+
+.jimsbbq{
+    background-image: url('../images/jimsbbq-tmb.jpg');
+}
+
+.proj-desc{
+    padding: 0px 20px;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 1s;
+}
+
+.proj-desc h3{
+    padding-left: 20px;
+}
+
+.proj-desc p{
+    padding-left: 20px;
+}
+
+hr{
+    margin: 100px 0px;
+    border-top: 1px dashed var(--star-blue);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .hamburger{
+        height: 30px;
+        width: 30px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        position: fixed;
+        right: 0;
+        margin: 7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: width .5s ease-in-out, height .5s ease-in-out;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+    }
+
+
+    .burg-line{
+        background-color: #ccc;
+        width: 70%;
+        height: 1px;
+        margin: 2px;
+    }
+
+
+    #navigation{
+        position: relative;
+        /*display: none;*/
+        z-index: 5;
+        transition: all 0.5s ease-in-out;
+        animation-name: navAnimate;
+        animation-duration: 0.5s;
+        animation-duration: normal;
+    }
+
+    @keyframes navAnimate{
+        from {
+            margin-top: -100px;
+            margin-right: -100px;
+        }
+        to {
+            margin-top: 0px;
+            margin-right: 0px;
+        }
+    }
+
+    nav{
+        display: none;
+    }
+
+ 
+
+    .mobile-nav ul li{
+        display: block;
+        margin: 10px;
+    }
+
+    .skills{
+        display: none;
+    }
+
+    .hero{
+        height: auto;
+    }
+
+    .content{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .content-wrapper{
+        width: 100%;
+        border-radius: 0px;
+        padding: 10px;
+    }
+
+    .content-center{
+        width: 100%;
+    }
+
+    p{
+        padding: 10px;
+    }
+
+    #profile{
+        display: none;
+    }
+
+    article{
+        border-radius: 0;
+        width: 100%;
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .proj-img{
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        margin: 0px;
+    }
+
+    .preview{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .preview a{
+        margin: 7px;
+        margin-top: 20px;
+    }
+    
+    .proj-desc{
+        width: 100%;
+        padding: 0px;
+        margin-top: 10px;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .proj-desc p{
+        padding: 0px;
+    }
+
+    .proj-desc h3{
+        text-align: left;
+        padding-left: 0px;
+        margin: 10px;
+        margin-left: 0px;
+    }
+
+    hr{
+        margin: 60px;
+        padding: 0px;
+    }
+
+    .resume-btn{
+        display: block;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        width: auto;
+        border-radius: 20px;
+        text-align: center;
+    }
+    
+}
